@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visor 3D</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <model-viewer src="Angel.glb" 
-                  alt="Modelo 3D"
+    <h1>Modelo 3D en GitHub Pages</h1>
+    <model-viewer src="assets/flexometro.glb" 
+                  alt="Modelo 3D de flexometro"
+                  auto-rotate
+                  camera-controls
+                  ar>
+    </model-viewer>
+
+    <model-viewer src="assets/Angel.glb" 
+                  alt="Modelo 3D de figura de angel"
                   auto-rotate
                   camera-controls
                   ar>
