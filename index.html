@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ángel en AR</title>
+    <title>Flexómetro en AR</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 </head>
 <body>
-    <model-viewer src="assets/Angel.glb"
-                  alt="Modelo Ángel"
-                  ar
-                  camera-controls
-                  auto-rotate>
+    <h1>Flexómetro en Realidad Aumentada</h1>
+
+    <!-- Modelo en 3D con Model Viewer -->
+    <model-viewer 
+        src="assets/flexometro.glb"
+        alt="Modelo Flexómetro"
+        ar
+        ar-modes="scene-viewer webxr quick-look"
+        camera-controls
+        auto-rotate>
     </model-viewer>
+
+    <br>
+
+    <!-- Botón para ver en AR en Android -->
+    <p><a href="intent://arvr.google.com/scene-viewer/1.0?file=https://alex-gm05.github.io/3d-models/assets/flexometro.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;end;" target="_blank">
+        📱 Ver en AR (Android)
+    </a></p>
+
+    <!-- Botón para ver en AR en iOS -->
+    <p><a rel="ar" href="assets/flexometro.glb">
+        🍏 Ver en AR (iOS)
+    </a></p>
+
+
+     <!-- Modelo en 3D con Model Viewer -->
+     <model-viewer 
+     src="assets/flexometro.glb"
+     alt="Modelo angel"
+     ar
+     ar-modes="scene-viewer webxr quick-look"
+     camera-controls
+     auto-rotate>
+    </model-viewer>
+
+    <br>
+
+    <!-- Botón para ver en AR en Android -->
+    <p><a href="intent://arvr.google.com/scene-viewer/1.0?file=https://alex-gm05.github.io/3d-models/assets/angel.glb&mode=ar_preferred#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;end;" target="_blank">
+        📱 Ver en AR (Android)
+    </a></p>
+
+    <!-- Botón para ver en AR en iOS -->
+    <p><a rel="ar" href="assets/angel.glb">
+        🍏 Ver en AR (iOS)
+    </a></p>
+
 </body>
 </html>
