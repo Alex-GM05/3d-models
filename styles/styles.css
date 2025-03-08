@@ -1,10 +1,20 @@
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
+/* Estilos para organizar los elementos en fila */
+.model-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
-model-viewer {
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    display: block;
+.model-container model-viewer {
+    width: 300px; /* Ajusta el tamaño del visor 3D */
+    height: 300px;
+    margin-right: 20px; /* Espacio entre el modelo y la imagen */
+}
+.model-container img {
+    width: 150px; /* Ajusta el tamaño de la imagen PNG */
+    height: auto;
+}
+.scan-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }

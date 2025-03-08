@@ -5,56 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexómetro en AR</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+    <!-- Enlaza el archivo CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <h1>Flexómetro en Realidad Aumentada</h1>
 
-    <!-- Modelo en 3D Flexometro -->
-    <model-viewer 
-        src="assets/flexometro.glb"
-        alt="Modelo Flexómetro"
-        ar
-        ar-modes="scene-viewer webxr quick-look"
-        camera-controls
-        auto-rotate>
-    </model-viewer>
+    <!-- Contenedor para el Flexómetro -->
+    <div class="model-container">
+        <!-- Modelo en 3D Flexómetro -->
+        <model-viewer 
+            src="assets/flexometro.glb"
+            alt="Modelo Flexómetro"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            auto-rotate>
+        </model-viewer>
 
-    <br>
+        <!-- Imagen PNG y enlace para AR -->
+        <div>
+            <img src="images/flexometro.png" alt="Flexómetro QR">
+            <p class="scan-text">¡Escanéame!</p>
+            <p><a href="images/flexometro.png">📱 Ver en AR (Android)</a></p>
+            <p><a rel="ar" href="assets/flexometro.glb">🍏 Ver en AR (iOS)</a></p>
+        </div>
+    </div>
 
-    <!-- Botón para ver en AR en Android -->
-    <p><a href="images/flexometro.png">
-        📱 Ver en AR (Android)
-    </a></p>
+    <!-- Contenedor para el Ángel -->
+    <div class="model-container">
+        <!-- Modelo en 3D Ángel -->
+        <model-viewer 
+            src="assets/angel.glb"
+            alt="Modelo Ángel"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            auto-rotate>
+        </model-viewer>
 
-    <!-- Botón para ver en AR en iOS -->
-    <p><a rel="ar" href="assets/flexometro.glb">
-        🍏 Ver en AR (iOS)
-    </a></p>
-
-
-     <!-- Modelo en 3D Angel -->
-     <model-viewer 
-     src="assets/angel.glb"
-     alt="Modelo angel"
-     ar
-     ar-modes="scene-viewer webxr quick-look"
-     camera-controls
-     auto-rotate>
-    </model-viewer>
-
-    <br>
-
-    <!-- Botón para ver en AR en Android -->
-    <p> 
-        <a href="images/Angel.png">
-        📱 Ver en AR (Android)
-        </a> 
-    </p>
-
-    <!-- Botón para ver en AR en iOS -->
-    <p><a rel="ar" href="assets/angel.glb">
-        🍏 Ver en AR (iOS)
-    </a></p>
-
+        <!-- Imagen PNG y enlace para AR -->
+        <div>
+            <img src="images/angel.png" alt="Ángel QR">
+            <p class="scan-text">¡Escanéame!</p>
+            <p><a href="images/angel.png">📱 Ver en AR (Android)</a></p>
+            <p><a rel="ar" href="assets/angel.glb">🍏 Ver en AR (iOS)</a></p>
+        </div>
+    </div>
 </body>
 </html>
